@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('gitBigbillionsale') {
+        stage('gitmarket') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'manojthirumani-jenkins', url: 'https://github.com/manojthirumani/market.git']]])
             }
